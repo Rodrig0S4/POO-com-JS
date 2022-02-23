@@ -1,2 +1,2 @@
 # POO-com-JS
-Implementação com abordagens procedurais.
+ Introdução à Programação Orientada a Objetos com JavaScript.
