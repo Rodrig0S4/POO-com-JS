@@ -1,35 +1,15 @@
+import modificador from "./modificador.js";
+
+console.log(modificador);
+
 var ingredientes = ['mel', 'água', 'sal', 'mostarda'];
-
-
-function capitalizar(ingredientes) {
-    var modificado = [];
-
-    for (var i = 0; i < ingredientes.length; i++) {
-        var letraInicial =
-            ingredientes[i].charAt(0).toUpperCase();
-        var restoTexto =
-            ingredientes[i].slice(1)
-        var resultado = letraInicial + restoTexto;
-
-        modificado[i] = resultado;
-    }
-
-    return modificado;
-}
-
-function ordenar(ingredientes) {
-    ingredientes.sort(function (a,b) {
-        console.log(a, b);
-        return a.localeCompare(b);
-    });
-    
-}
-
 var resultadoCapitalizado = capitalizar(ingredientes);
 var resultadoOrdenacao = ordenar(resultadoCapitalizado);
+var resultadoCaixaAlta = modificador.caixaAlta(ingredientes);
 
 console.log(resultadoCapitalizado);
 console.log(resultadoOrdenacao);
+console.log(resultadoCaixaAlta);
 
 
 
